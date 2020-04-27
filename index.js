@@ -4,7 +4,7 @@ module.exports = {
   heapdiff
 }
 
-let cache = {}
+const cache = {}
 function getEnv (key, value) {
   if (!(key in process.env)) {
     if (value) return value
